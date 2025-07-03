@@ -17,18 +17,9 @@ class Span
     public:
         Span(unsigned int n);
         void addNumber(int nbr);
-        int shortestSpan(int nbr);
-        int longestSpan(int nbr);
+        int shortestSpan();
+        int longestSpan();
 
 };
 
 
-template <typename T>
-typename T::iterator easyfind(T &container, int val)
-{
-    typename T::iterator it = std::find(container.begin(), container.end(), val);
-     if (it == container.end()) {
-        throw std::runtime_error("Value not found in container.");
-    }
-    return (it);
-}
