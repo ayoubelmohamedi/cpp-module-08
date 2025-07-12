@@ -6,28 +6,28 @@
 #    By: ael-moha <ael-moha@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/11 16:55:26 by ael-moha          #+#    #+#              #
-#    Updated: 2025/06/29 01:45:52 by ael-moha         ###   ########.fr        #
+#    Updated: 2025/07/12 16:09:03 by ael-moha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 
-NAME= spanner
+NAME = spanner
 
-CXX=c++
+CXX = c++
 
-CXXFLAGS= -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS=main.cpp Span.cpp 
-OBJS=$(SRCS:.cpp=.o)
+SRCS = main.cpp Span.cpp 
+OBJS = $(SRCS:.cpp=.o)
 
-all:$(NAME)
+all: $(NAME)
 
-$(NAME):$(OBJS)
+$(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
-clean :
+clean:
 	rm -f $(OBJS)
-fclean : clean
+fclean: clean
 	rm -f $(NAME)
-re : fclean all
+re: fclean all

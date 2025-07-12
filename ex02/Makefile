@@ -6,13 +6,13 @@
 #    By: ael-moha <ael-moha@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/11 16:55:26 by ael-moha          #+#    #+#              #
-#    Updated: 2025/07/09 20:47:12 by ael-moha         ###   ########.fr        #
+#    Updated: 2025/07/12 16:06:47 by ael-moha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 
-NAME= spanner
+NAME= mutantStack
 
 
 all:$(NAME)
@@ -25,7 +25,7 @@ SRCS= main.cpp
 
 OBJS= $(SRCS:.cpp=.o)
 
-($NAME):$(OBJS)
+$(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
 clean :
