@@ -1,0 +1,25 @@
+# Ignore object files and binaries
+*.o
+*.obj
+*.exe
+a.out
+*.out
+*.gch
+*.swp
+*.swo
+*.tmp
+*.log
+*.dSYM/
+*.DS_Store
+# Ignore build and binary files
+build/
+dist/
+# Ignore editor/project files
+.vscode/
+.idea/
+*.user
+*.code-workspace
+# Ignore executables in ex00, ex01, ex02
+ex00/easyfind
+ex01/spanner
+ex02/a.out
